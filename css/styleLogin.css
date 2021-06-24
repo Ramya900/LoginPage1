@@ -1,0 +1,188 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/animated-pattern.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDiv {
+    background-color: white;
+    width: 50%;
+    margin-top: 10em;
+    margin-left: 20em;
+}
+
+.paraIcon {
+    font-size: 16px;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+
+.headTag {
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.para {
+    font-size: 14px;
+    padding-left: 4em;
+}
+
+.formCls {
+    padding: 0.2em 2em 1em 3em;
+}
+
+.lableCls {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inputCls {
+    font-size: 15px;
+}
+
+.label2 {
+    font-size: 16px;
+}
+
+.btn2 {
+    font-size: 16px;
+}
+
+.para1 {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 16px;
+}
+
+.para2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (min-width:360px) and (max-width:740px) {
+    .mainDiv {
+        width: 75%;
+        margin-top: 3em;
+        margin-left: 2.5em;
+    }
+
+    .paraIcon {
+        font-size: 12px;
+        padding-left: 0.8em;
+        padding-top: 1em;
+    }
+
+    .headTag {
+        padding-top: 0.1em;
+        padding-left: 0.8em;
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 12px;
+        padding-left: 1.8em;
+    }
+
+    .formCls {
+        padding: 0.2em 0.5em 1em 1em;
+    }
+
+    .lableCls, .inputCls, .label2, .btn2, .para1, .para2 {
+        font-size: 12px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .mainDiv {
+        width: 75%;
+        margin-bottom: 2em !important;
+        margin-top: 1em !important;
+        margin-left: 4.5em;
+    }
+
+    .paraIcon {
+        font-size: 14px;
+        padding-left: 3.5em;
+        padding-top: 1em;
+    }
+
+    .headTag {
+        padding-top: 0.5em;
+        padding-left: 2.5em;
+        font-size: 27px;
+    }
+
+    .para {
+        font-size: 14px;
+        padding-left: 5em;
+    }
+
+    .formCls {
+        padding: 0.2em 2em 1em 3em;
+    }
+
+    .lableCls, .inputCls, .label2, .btn2, .para1, .para2 {
+        font-size: 16px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1441px) {
+    .mainDiv {
+        width: 75%;
+        margin-bottom: 4em;
+        margin-top: 3em;
+        margin-left: 5em;
+    }
+
+    .paraIcon {
+        font-size: 14px;
+        padding-left: 3.5em;
+        padding-top: 1em;
+    }
+
+    .headTag {
+        padding-top: 0.5em;
+        padding-left: 2.5em;
+        font-size: 27px;
+    }
+
+    .para {
+        font-size: 14px;
+        padding-left: 5em;
+    }
+
+    .formCls {
+        padding: 0.2em 2em 1em 3em;
+    }
+
+    .lableCls, .inputCls, .label2, .btn2, .para1, .para2 {
+        font-size: 16px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:1442px) {
+    .mainDiv {
+        width: 75%;
+        margin-top: 10em;
+        margin-left: 5em;
+    }
+}

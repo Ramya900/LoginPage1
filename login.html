@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script> 
+
+    <link rel="stylesheet" href="./css/styleLogin.css">
+
+    <title>Design</title>
+   
+</head>
+
+<body>
+    
+    <div class="conatiner mainDiv">
+
+        <div class="row row1">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+                <p class="paraIcon"><img src="./images/music.gif" alt="gif" width="30px">fieldly</p>
+                <h3 class="headTag">Log in.</h3>
+                <p class="para text-muted">Log in with your data that you entered during your registration.</p>
+
+                <form method="POST" class="formCls">
+
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1" class="lableCls">Email address</label>
+                      <input type="email" class="form-control inputCls text-muted bg-light" id="emailid"   required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputPassword3" class="lableCls">Password</label>
+                          <input type="password" class="form-control inputCls text-muted bg-light" id="user-pass" placeholder="at least 8 characters" required />
+                    </div>
+        
+                    <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label label2" for="gridCheck">
+                            Keep me logged in
+                          </label>
+                        </div>
+                    </div>
+        
+                    <div class="btn1">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block btn2" name="login" value="DO LOGIN" id="login_button">Log in</button>
+                    </div>
+        
+                    <div>
+                        <p class="para1">Don't have an account? <a href="index.html">Sign up</a></p>
+                        <p class="para2"><a href="">Forgot password?</a></p>
+                    </div>
+        
+                </form>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <img src="./images/img7.png" alt="" width="120%" height="100%" class="img1">
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script>
+      $("#login_button").click(function(){
+          let user_email = $("#emailid").val();
+          let user_password = $("#user-pass").val();
+            // alert(user_email);
+            // alert(password);
+
+          $.ajax({
+              url:"php/login.php",
+              type:"POST",
+              data: {
+                  email : user_email,
+                  password : user_password
+                },
+              success : function(results) {
+                  //alert(results);
+                  //let volume1 = $.parseJSON(results);
+                  
+                  if(results==1) {
+                    alert("Login Successful");
+                  }else {
+                    alert("User Not found!!");
+                  }
+
+                }
+            });
+
+      });
+    </script>
+
+    
+
+</body>
+</html>

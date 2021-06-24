@@ -1,0 +1,242 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainDiv1 {
+    margin-top: 4em;
+}
+
+.row1 {
+    margin-left: 10em;
+}
+
+.title {
+    position: absolute;
+    top: 13rem;
+    left: 2.5em;
+    right: 2em;
+    line-height: 1.5;
+    color: white;
+    font-weight: bolder;
+    font-size: 39px;
+}
+
+.colDiv2 {
+    background-color: azure;
+}
+
+
+.link1 {
+    font-size: 13px;
+    float: right;
+    padding: 10px;
+}
+
+.headTag {
+    font-size: 25px;
+    padding-top: 2em;
+    padding-left: 5em;
+    font-weight: bold;
+}
+
+.formCls {
+    padding: 0.5em 6em 1em 6em;
+}
+
+.lableCls {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.inputCls {
+    font-size: 14px;
+}
+
+.lableCls1 {
+    font-size: 15px;
+}
+
+.btn2 {
+    font-size: 17px;
+}
+
+.hr1 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.icon1 {
+    float: left;
+}
+
+.btn4 {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3em;
+}
+
+.aaa1 {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 360px) and (max-width: 740px) {
+    .mainDiv1 {
+        margin-top: 2em;
+    }
+
+    .row1 {
+        margin: 0 0.1em;
+    }
+
+    .img1 {
+        width: 110%;
+        height: 150%;
+    }
+
+    .title {
+        top: 3rem;
+        left: 3.5em;
+        right: 2em;
+        line-height: 1.8;
+        font-size: 18px;
+    }
+
+    .colDiv2 {
+       left: 0.7em;
+    }
+
+    .headTag {
+        font-size: 18px;
+        padding-top: 2.5em;
+        padding-left: 0.1em;
+    }
+
+    .formCls {
+        padding: 0.2em .1em 1em 0.1em;
+    }
+
+    .lableCls, .lableCls1, .inputCls, .btn2, .btn4, .hh1 {
+        font-size: 12px;
+    }
+
+    .icon1 {
+        width: 22px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .mainDiv1 {
+        /* width: 55% !important; */
+        margin-top: 2em;
+        /* margin-left: 0.1rem; */
+    }
+
+    .row1 {
+        margin: 0 0.1em;
+    }
+
+    .img1 {
+        right: 1.9em;
+        width: 103%;
+        height: 100%;
+    }
+
+    .title {
+        top: 10rem;
+        left: 3.5em;
+        right: 2em;
+        line-height: 1.8;
+        font-size: 35px;
+    }
+
+    .colDiv2 {
+        width: 65%;
+        left: 0.7em;
+    }
+
+    .link1{
+        font-size: 14px;
+    }
+ 
+    .headTag {
+        font-size: 27px;
+        padding-top: 3em;
+        padding-left: 0.1em;
+    }
+ 
+    .formCls {
+        padding: 0.5em 0.5em 1em 0.5em;
+    }
+
+    .lableCls, .lableCls1, .inputCls, .btn2, .btn4, .hh1 {
+        font-size: 18px;
+    }
+
+    .icon1 {
+        width: 22px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+    .mainDiv1 {
+        margin-top: 5em;
+        margin-left: 2.5em;
+    }
+
+    .row1 {
+        margin: 0 1em;
+    }
+
+    .img1 {
+        right: 1.9em;
+        width: 110%;
+        height: 100%;
+    }
+
+    .title {
+        top: 10rem;
+        left: 3.5em;
+        right: 2em;
+        line-height: 1.8;
+        font-size: 35px;
+    }
+
+    .colDiv2 {
+        left: 1em;
+    }
+
+    .link1{
+        font-size: 14px;
+    }
+ 
+    .headTag {
+        font-size: 27px;
+        padding-top: 3em;
+        padding-left: 0.1em;
+    }
+ 
+    .formCls {
+        padding: 0.5em 1em 1em 1em;
+    }
+
+    .lableCls, .lableCls1, .inputCls, .btn2, .btn4, .hh1 {
+        font-size: 18px;
+    }
+
+    .icon1 {
+        width: 22px;
+    }
+}
+
+@media (max-width:1441px) {
+    .mainDiv1 {
+        margin-top: 5em;
+        margin-left: 3.5em;
+    }
+
+    .row1 {
+        margin: 0 0.5em;
+    }
+}
